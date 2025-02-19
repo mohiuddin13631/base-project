@@ -1,0 +1,85 @@
+name: base_project
+description: A new Flutter project.
+
+publish_to: 'none'
+version: 2.0.1+5
+
+environment:
+  sdk: ">=3.0.5 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  get: ^4.7.2
+  dotted_border: ^2.1.0
+  flutter_svg: ^2.0.17
+  http: ^1.3.0
+  lottie: ^3.3.1
+  file_picker: ^9.0.0
+  image_picker: ^1.1.2
+  shared_preferences: ^2.5.2
+  path_provider: ^2.1.5
+  intl: ^0.20.2
+  pin_code_fields: ^8.0.1
+  webview_flutter: ^4.10.0
+  url_launcher: ^6.3.1
+  flutter_widget_from_html: ^0.15.3
+  font_awesome_flutter: ^10.8.0
+  auto_size_text: ^3.0.0
+  flutter_spinkit: ^5.2.1
+  shimmer: ^3.0.0
+  cached_network_image: ^3.4.1
+  firebase_messaging: ^15.2.3
+  flutter_local_notifications: ^18.0.1
+  firebase_analytics: ^11.4.3
+  firebase_core: ^3.12.0
+  firebase_core_platform_interface: ^5.4.0
+  awesome_dialog: ^3.2.1
+  circular_countdown_timer: ^0.2.4
+  dio: ^5.8.0+1
+
+  connectivity_plus: ^6.1.3
+  permission_handler: ^11.3.1
+  flutter_inappwebview: ^6.1.5
+  open_file: ^3.5.10
+  google_sign_in: ^6.2.2
+  equatable: ^2.0.7
+  json_annotation: any
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/onboard/
+    - assets/images/menu/
+    - assets/images/social/
+    - assets/images/app_logo/
+    - assets/images/common/
+    - assets/icons/
+    - assets/animation/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+
+    - family: Mulish
+      fonts:
+        - asset: assets/fonts/mulish/Mulish-Light.ttf
+          weight: 300
+        - asset: assets/fonts/mulish/Mulish-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/mulish/Mulish-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/mulish/Mulish-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/mulish/Mulish-Bold.ttf
+          weight: 700

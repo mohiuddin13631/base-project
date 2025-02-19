@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "79022797364",
+    "project_id": "viserbank-c4d54",
+    "storage_bucket": "viserbank-c4d54.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79022797364:android:6fe9d07069403533789061",
+        "android_client_info": {
+          "package_name": "dev.vlab.baseproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79022797364-9i6e5gtkpcd3p57nn2k1hus0otq7j0nc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsOVms1KALxiXSDQlwjypVagc_QCNkvIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79022797364-9i6e5gtkpcd3p57nn2k1hus0otq7j0nc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "79022797364-93p0foc72k8dpnqv17cqq5udhtjvtvhe.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "dev.vlab.baseproject"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79022797364:android:c8c84be8f8531c5f789061",
+        "android_client_info": {
+          "package_name": "dev.vlab.base_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79022797364-9erloap5sp00pgcu6rlch90oekr3k65u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.vlab.base_project",
+            "certificate_hash": "94bc7de12d2b186836b9cb9baf2c32a161d5a4fc"
+          }
+        },
+        {
+          "client_id": "79022797364-9msnc8jrk40lp04up0fc2rhpoupi6s6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.vlab.base_project",
+            "certificate_hash": "b136159e2d15ade4750b074c4cf45ea6f715b188"
+          }
+        },
+        {
+          "client_id": "79022797364-9i6e5gtkpcd3p57nn2k1hus0otq7j0nc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsOVms1KALxiXSDQlwjypVagc_QCNkvIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79022797364-9i6e5gtkpcd3p57nn2k1hus0otq7j0nc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "79022797364-93p0foc72k8dpnqv17cqq5udhtjvtvhe.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "dev.vlab.baseproject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
