@@ -133,7 +133,7 @@ class _ProfileCompleteScreenState extends State<ProfileCompleteScreen> {
                                           width: Dimensions.space40 + 2,
                                         ),
                                         const SizedBox(width: Dimensions.space6),
-                                        Text(controller.mobileCode ?? '',style: interRegularLarge,),
+                                        Text(controller.mobileCode ?? '',style: regularLarge,),
                                         const SizedBox(width: 3),
                                         const Icon(
                                           Icons.arrow_drop_down_rounded,

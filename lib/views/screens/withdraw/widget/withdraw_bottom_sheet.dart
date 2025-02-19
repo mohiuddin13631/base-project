@@ -93,13 +93,13 @@ class WithdrawBottomSheet{
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 const SizedBox(height: 8),
-                                Text((details?.name.toString().capitalizeFirst??'').tr,style: interLightDefault.copyWith(color: MyColor.bodyTextColor),overflow: TextOverflow.ellipsis,),
+                                Text((details?.name.toString().capitalizeFirst??'').tr,style: lightDefault.copyWith(color: MyColor.bodyTextColor),overflow: TextOverflow.ellipsis,),
                                 const SizedBox(height: 8),
                                 Row(
                                   children: [
                                     const Icon(Icons.file_download,size: 17,color: MyColor.primaryColor,),
                                     const SizedBox(width: 12),
-                                    Text(MyStrings.attachment.tr,style: interRegularDefault.copyWith(color: MyColor.primaryColor),)
+                                    Text(MyStrings.attachment.tr,style: regularDefault.copyWith(color: MyColor.primaryColor),)
                                   ],
                                 ),
                               ],

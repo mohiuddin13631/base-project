@@ -65,7 +65,7 @@ class _WithdrawScreenState extends State<WithdrawScreen> {
           child: Scaffold(
             backgroundColor: MyColor.containerBgColor,
             appBar: AppBar(
-              title: Text(MyStrings.withdrawals.tr, style: interRegularLarge.copyWith(color: MyColor.colorWhite)),
+              title: Text(MyStrings.withdrawals.tr, style: regularLarge.copyWith(color: MyColor.colorWhite)),
               backgroundColor: MyColor.primaryColor,
               elevation: 0,
               leading: IconButton(

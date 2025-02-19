@@ -86,9 +86,9 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(controller.model.data?.user?.username ?? "", style: interSemiBoldLarge.copyWith(color: MyColor.getTextColor(), fontWeight: FontWeight.w600)),
+                                  Text(controller.model.data?.user?.username ?? "", style: semiBoldLarge.copyWith(color: MyColor.getTextColor(), fontWeight: FontWeight.w600)),
                                   const SizedBox(height: Dimensions.space5),
-                                  Text(controller.model.data?.user?.countryName ?? "",overflow: TextOverflow.ellipsis, style: interRegularSmall.copyWith(color: MyColor.getGreyText(),fontWeight: FontWeight.w600)),
+                                  Text(controller.model.data?.user?.countryName ?? "",overflow: TextOverflow.ellipsis, style: regularSmall.copyWith(color: MyColor.getGreyText(),fontWeight: FontWeight.w600)),
                                 ],
                               ),
                             )
@@ -110,7 +110,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                             children: [
                               const Icon(Icons.edit,color: MyColor.colorWhite,size: 15,),
                               const SizedBox(width: 5,),
-                              Text(MyStrings.editProfile.tr, textAlign: TextAlign.center, style: interRegularSmall.copyWith(color: MyColor.colorWhite)),
+                              Text(MyStrings.editProfile.tr, textAlign: TextAlign.center, style: regularSmall.copyWith(color: MyColor.colorWhite)),
                             ],
                           ),
                         ),

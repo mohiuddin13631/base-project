@@ -44,7 +44,7 @@ class FaqListItem extends StatelessWidget {
                   width: MediaQuery.of(context).size.width * 0.7,
                   child: Text(
                     question.tr,
-                    style:interRegularSmall.copyWith(color: MyColor.getGreyText1(),fontWeight: FontWeight.w600)),
+                    style:regularSmall.copyWith(color: MyColor.getGreyText1(),fontWeight: FontWeight.w600)),
                 ),
                 SizedBox(
                     height: 30, width: 30,
@@ -62,7 +62,7 @@ class FaqListItem extends StatelessWidget {
                 children: [
                   const SizedBox(height: Dimensions.space10),
                   Text(answer.tr,
-                    style: interRegularSmall.copyWith(color: MyColor.getLabelTextColor()),
+                    style: regularSmall.copyWith(color: MyColor.getLabelTextColor()),
                   )
                 ],
               ),

@@ -73,16 +73,16 @@ class _TwoFactorVerificationScreenState extends State<TwoFactorVerificationScree
                     const SizedBox(height: Dimensions.space50),
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * .07),
-                      child: SmallText(text: MyStrings.twoFactorMsg.tr, maxLine: 3, textAlign: TextAlign.center, textStyle: interRegularDefault.copyWith(color: MyColor.getLabelTextColor())),
+                      child: SmallText(text: MyStrings.twoFactorMsg.tr, maxLine: 3, textAlign: TextAlign.center, textStyle: regularDefault.copyWith(color: MyColor.getLabelTextColor())),
                     ),
                     const SizedBox(height: Dimensions.space50),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: Dimensions.space30),
                       child: PinCodeTextField(
                         appContext: context,
-                        pastedTextStyle: interRegularDefault.copyWith(color: MyColor.getTextColor()),
+                        pastedTextStyle: regularDefault.copyWith(color: MyColor.getTextColor()),
                         length: 6,
-                        textStyle: interRegularDefault.copyWith(color: MyColor.getTextColor()),
+                        textStyle: regularDefault.copyWith(color: MyColor.getTextColor()),
                         obscureText: false,
                         obscuringCharacter: '*',
                         blinkWhenObscuring: false,

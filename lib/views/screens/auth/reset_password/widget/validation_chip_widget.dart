@@ -24,7 +24,7 @@ class ChipWidget extends StatelessWidget {
           avatar: Icon(hasError?Icons.cancel:Icons.check_circle,color: hasError?Colors.red:Colors.green,size: 15,),
           label: Text(
             name,
-            style: interRegularDefault.copyWith(
+            style: regularDefault.copyWith(
               fontSize: Dimensions.fontExtraSmall,
               color: hasError?Colors.red:Colors.green,
             ),

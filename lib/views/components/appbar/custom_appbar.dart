@@ -90,7 +90,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
                 : const SizedBox.shrink(),
             backgroundColor: widget.bgColor,
             title: Text(widget.title.tr,
-                style: interRegularLarge.copyWith(color: MyColor.colorWhite)),
+                style: regularLarge.copyWith(color: MyColor.colorWhite)),
             centerTitle: widget.isTitleCenter,
             actions: [
               widget.isShowActionBtn
@@ -118,7 +118,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
             elevation: 0,
             backgroundColor: widget.bgColor,
             title: Text(widget.title.tr,
-                style: interRegularLarge.copyWith(color: MyColor.colorWhite)),
+                style: regularLarge.copyWith(color: MyColor.colorWhite)),
             actions: [
               widget.isShowActionBtn
                   ? InkWell(

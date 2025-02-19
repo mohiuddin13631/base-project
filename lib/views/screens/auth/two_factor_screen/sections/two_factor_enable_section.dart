@@ -36,14 +36,14 @@ class TwoFactorEnableSection extends StatelessWidget {
                     Center(
                       child: Text(
                         MyStrings.addYourAccount.tr,
-                        style: interBoldExtraLarge,
+                        style: boldExtraLarge,
                       ),
                     ),
                     const CustomDivider(),
                     Center(
                       child: Text(
                         MyStrings.useQRCODETips.tr,
-                        style: interBoldExtraLarge,
+                        style: boldExtraLarge,
                       ),
                     ),
                     const SizedBox(
@@ -72,22 +72,22 @@ class TwoFactorEnableSection extends StatelessWidget {
                     Center(
                       child: Text(
                         MyStrings.enable2Fa.tr,
-                        style: interBoldExtraLarge,
+                        style: boldExtraLarge,
                       ),
                     ),
                     const CustomDivider(),
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * .07),
-                      child: SmallText(text: MyStrings.twoFactorMsg.tr, maxLine: 3, textAlign: TextAlign.center, textStyle: interRegularDefault),
+                      child: SmallText(text: MyStrings.twoFactorMsg.tr, maxLine: 3, textAlign: TextAlign.center, textStyle: regularDefault),
                     ),
                     const SizedBox(height: Dimensions.space50),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: Dimensions.space30),
                       child: PinCodeTextField(
                         appContext: context,
-                        pastedTextStyle: interRegularDefault,
+                        pastedTextStyle: regularDefault,
                         length: 6,
-                        textStyle: interRegularDefault.copyWith(color: MyColor.getTextColor()),
+                        textStyle: regularDefault.copyWith(color: MyColor.getTextColor()),
                         obscureText: false,
                         obscuringCharacter: '*',
                         blinkWhenObscuring: false,

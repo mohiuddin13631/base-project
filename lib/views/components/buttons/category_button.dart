@@ -45,7 +45,7 @@ class CategoryButton extends StatelessWidget {
         ),
         child: Text(
           text,
-          style: interRegularDefault.copyWith(color: textColor,fontWeight: FontWeight.w500),
+          style: regularDefault.copyWith(color: textColor,fontWeight: FontWeight.w500),
         ),
       ),
     );

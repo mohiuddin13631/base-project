@@ -3,110 +3,65 @@ import 'package:base_project/core/utils/dimensions.dart';
 import 'package:base_project/core/utils/my_color.dart';
 
 // light-font
-const TextStyle interLightOverSmall = TextStyle(
-    fontFamily: 'Roboto',
-    color: MyColor.colorBlack,
-    fontWeight: FontWeight.w300,
-    fontSize: Dimensions.fontOverSmall
-);
-const TextStyle interLightExtraSmall = TextStyle(
-    fontFamily: 'Roboto',
-    color: MyColor.colorBlack,
-    fontWeight: FontWeight.w300,
-    fontSize: Dimensions.fontExtraSmall
-);
-const TextStyle interLightSmall = TextStyle(
-    fontFamily: 'Roboto',
-    color: MyColor.colorBlack,
-    fontWeight: FontWeight.w300,
-    fontSize: Dimensions.fontSmall
-);
-const TextStyle interLightDefault = TextStyle(
+
+const TextStyle lightDefault = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w300,
     fontSize: Dimensions.fontDefault
 );
-const TextStyle interLightLarge = TextStyle(
-    fontFamily: 'Roboto',
-    color: MyColor.colorBlack,
-    fontWeight: FontWeight.w300,
-    fontSize: Dimensions.fontLarge
-);
-const TextStyle interLightMediumLarge = TextStyle(
-    fontFamily: 'Roboto',
-    color: MyColor.colorBlack,
-    fontWeight: FontWeight.w300,
-    fontSize: Dimensions.fontMediumLarge
-);
-const TextStyle interLightExtraLarge = TextStyle(
-    fontFamily: 'Roboto',
-    color: MyColor.colorBlack,
-    fontWeight: FontWeight.w300,
-    fontSize: Dimensions.fontExtraLarge
-);
-const TextStyle interLightOverLarge = TextStyle(
-    fontFamily: 'Roboto',
-    color: MyColor.colorBlack,
-    fontWeight: FontWeight.w300,
-    fontSize: Dimensions.fontOverLarge
-);
-const TextStyle interLightHeader1 = TextStyle(
-    fontFamily: 'Roboto',
-    color: MyColor.colorBlack,
-    fontWeight: FontWeight.w300,
-    fontSize: Dimensions.fontHeader1
-);
+
 // regular-font
-const TextStyle interRegularOverSmall = TextStyle(
+
+const TextStyle regularOverSmall = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w400,
     fontSize: Dimensions.fontOverSmall
 );
-const TextStyle interRegularExtraSmall = TextStyle(
+const TextStyle regularExtraSmall = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w400,
     fontSize: Dimensions.fontExtraSmall
 );
-const TextStyle interRegularSmall = TextStyle(
+const TextStyle regularSmall = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w400,
     fontSize: Dimensions.fontSmall
 );
-const TextStyle interRegularDefault = TextStyle(
+const TextStyle regularDefault = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w400,
     fontSize: Dimensions.fontDefault
 );
-const TextStyle interRegularLarge = TextStyle(
+const TextStyle regularLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w400,
     fontSize: Dimensions.fontLarge
 );
-const TextStyle interRegularMediumLarge = TextStyle(
+const TextStyle regularMediumLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w400,
     fontSize: Dimensions.fontMediumLarge
 );
-const TextStyle interRegularExtraLarge = TextStyle(
+const TextStyle regularExtraLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w400,
     fontSize: Dimensions.fontExtraLarge
 );
-const TextStyle interRegularOverLarge = TextStyle(
+const TextStyle regularOverLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w400,
     fontSize: Dimensions.fontOverLarge
 );
-const TextStyle interRegularHeader1 = TextStyle(
+const TextStyle regularHeader1 = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w400,
@@ -122,55 +77,55 @@ const mulishRegular = TextStyle(
 
 
 // medium-font
-const TextStyle interMediumOverSmall = TextStyle(
+const TextStyle mediumOverSmall = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w500,
     fontSize: Dimensions.fontOverSmall
 );
-const TextStyle interMediumExtraSmall = TextStyle(
+const TextStyle mediumExtraSmall = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w500,
     fontSize: Dimensions.fontExtraSmall
 );
-const TextStyle interMediumSmall = TextStyle(
+const TextStyle mediumSmall = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w500,
     fontSize: Dimensions.fontSmall
 );
-const TextStyle interMediumDefault = TextStyle(
+const TextStyle mediumDefault = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w500,
     fontSize: Dimensions.fontDefault
 );
-const TextStyle interMediumLarge = TextStyle(
+const TextStyle mediumLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w500,
     fontSize: Dimensions.fontLarge
 );
-const TextStyle interMediumMediumLarge = TextStyle(
+const TextStyle mediumMediumLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w500,
     fontSize: Dimensions.fontMediumLarge
 );
-const TextStyle interMediumExtraLarge = TextStyle(
+const TextStyle mediumExtraLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w500,
     fontSize: Dimensions.fontExtraLarge
 );
-const TextStyle interMediumOverLarge = TextStyle(
+const TextStyle mediumOverLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w500,
     fontSize: Dimensions.fontOverLarge
 );
-const TextStyle interMediumHeader1 = TextStyle(
+const TextStyle mediumHeader1 = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w500,
@@ -179,37 +134,37 @@ const TextStyle interMediumHeader1 = TextStyle(
 
 
 
-const TextStyle interSemiBoldSmall = TextStyle(
+const TextStyle semiBoldSmall = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w600,
     fontSize: Dimensions.fontSmall
 );
-const TextStyle interSemiBoldDefault = TextStyle(
+const TextStyle semiBoldDefault = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w600,
     fontSize: Dimensions.fontDefault
 );
-const TextStyle interSemiBoldLarge = TextStyle(
+const TextStyle semiBoldLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w600,
     fontSize: Dimensions.fontLarge
 );
-const TextStyle interSemiBoldMediumLarge = TextStyle(
+const TextStyle semiBoldMediumLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w600,
     fontSize: Dimensions.fontMediumLarge
 );
-const TextStyle interSemiBoldExtraLarge = TextStyle(
+const TextStyle semiBoldExtraLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w600,
     fontSize: Dimensions.fontExtraLarge
 );
-const TextStyle interSemiBoldOverLarge = TextStyle(
+const TextStyle semiBoldOverLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w600,
@@ -218,55 +173,55 @@ const TextStyle interSemiBoldOverLarge = TextStyle(
 
 
 // semi-bold
-const TextStyle interBoldOverSmall = TextStyle(
+const TextStyle boldOverSmall = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w700,
     fontSize: Dimensions.fontOverSmall
 );
-const TextStyle interBoldExtraSmall = TextStyle(
+const TextStyle boldExtraSmall = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w700,
     fontSize: Dimensions.fontExtraSmall
 );
-const TextStyle interBoldSmall = TextStyle(
+const TextStyle boldSmall = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w700,
     fontSize: Dimensions.fontSmall
 );
-const TextStyle interBoldDefault = TextStyle(
+const TextStyle boldDefault = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w700,
     fontSize: Dimensions.fontDefault
 );
-const TextStyle interBoldLarge = TextStyle(
+const TextStyle boldLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w700,
     fontSize: Dimensions.fontLarge
 );
-const TextStyle interBoldMediumLarge = TextStyle(
+const TextStyle boldMediumLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w700,
     fontSize: Dimensions.fontMediumLarge
 );
-const TextStyle interBoldExtraLarge = TextStyle(
+const TextStyle boldExtraLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w700,
     fontSize: Dimensions.fontExtraLarge
 );
-const TextStyle interBoldOverLarge = TextStyle(
+const TextStyle boldOverLarge = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w700,
     fontSize: Dimensions.fontOverLarge
 );
-const TextStyle interBoldHeader1 = TextStyle(
+const TextStyle boldHeader1 = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w700,
@@ -274,7 +229,7 @@ const TextStyle interBoldHeader1 = TextStyle(
 );
 
 
-const TextStyle interSemiBold = TextStyle(
+const TextStyle semiBold = TextStyle(
     fontFamily: 'Roboto',
     color: MyColor.colorBlack,
     fontWeight: FontWeight.w600,

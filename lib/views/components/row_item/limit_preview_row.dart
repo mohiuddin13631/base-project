@@ -22,8 +22,8 @@ class LimitPreviewRow extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(firstText.tr,style: interSemiBold.copyWith(fontSize: Dimensions.fontSmall12,color: MyColor.getGreyText() )),
-            Text(secondText.tr,style: interSemiBold.copyWith(fontSize: Dimensions.fontSmall,color: MyColor.getGreyText1() ))
+            Text(firstText.tr,style: semiBold.copyWith(fontSize: Dimensions.fontSmall12,color: MyColor.getGreyText() )),
+            Text(secondText.tr,style: semiBold.copyWith(fontSize: Dimensions.fontSmall,color: MyColor.getGreyText1() ))
           ],
         ),
         const SizedBox(height: 15),

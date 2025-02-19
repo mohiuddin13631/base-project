@@ -21,7 +21,7 @@ class HeadingTextWidget extends StatelessWidget {
         ), // 4%
          HeaderText(text: header),
         const SizedBox(height: 5,),
-        Text(body.tr,style: interRegularDefault.copyWith(color: MyColor.getGreyText()),),
+        Text(body.tr,style: regularDefault.copyWith(color: MyColor.getGreyText()),),
         SizedBox(
           height: MediaQuery.of(context).size.height *.03,
         ),

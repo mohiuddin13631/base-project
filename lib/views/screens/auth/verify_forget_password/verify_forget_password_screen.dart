@@ -74,9 +74,9 @@ class _VerifyForgetPassScreenState extends State<VerifyForgetPassScreen> {
                           padding: const EdgeInsets.symmetric(horizontal: Dimensions.space30),
                           child: PinCodeTextField(
                             appContext: context,
-                            pastedTextStyle: interRegularDefault.copyWith(color: MyColor.primaryColor),
+                            pastedTextStyle: regularDefault.copyWith(color: MyColor.primaryColor),
                             length: 6,
-                            textStyle: interRegularDefault.copyWith(color: MyColor.colorBlack),
+                            textStyle: regularDefault.copyWith(color: MyColor.colorBlack),
                             obscureText: false,
                             obscuringCharacter: '*',
                             blinkWhenObscuring: false,
@@ -137,7 +137,7 @@ class _VerifyForgetPassScreenState extends State<VerifyForgetPassScreen> {
                               onPressed: (){
                                 controller.resendForgetPassCode();
                               },
-                              child: DefaultText(text: MyStrings.resend.tr, textStyle: interSemiBold.copyWith(decoration:TextDecoration.underline,color: MyColor.primaryColor,fontSize: Dimensions.fontDefault)
+                              child: DefaultText(text: MyStrings.resend.tr, textStyle: semiBold.copyWith(decoration:TextDecoration.underline,color: MyColor.primaryColor,fontSize: Dimensions.fontDefault)
                               ),
                             )
                           ],

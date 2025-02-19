@@ -96,12 +96,12 @@ class _OnboardScreenState extends State<OnboardScreen> {
                           children: [
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: context.width * .1),
-                              child: Text(controller.onboardTitleList[index].toTitleCase().tr,style: interBoldLarge.copyWith(fontSize: 24,color: MyColor.onboardContentColor),),
+                              child: Text(controller.onboardTitleList[index].toTitleCase().tr,style: boldLarge.copyWith(fontSize: 24,color: MyColor.onboardContentColor),),
                             ),
                             const SizedBox(height: 10),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: context.width * .08),
-                              child: Text(controller.onboardSubTitleList[index].toTitleCase().tr,style: interRegularLarge.copyWith(color: MyColor.onboardContentColor,fontSize: 16),textAlign: TextAlign.center,),
+                              child: Text(controller.onboardSubTitleList[index].toTitleCase().tr,style: regularLarge.copyWith(color: MyColor.onboardContentColor,fontSize: 16),textAlign: TextAlign.center,),
                             )
                           ],
                         ),

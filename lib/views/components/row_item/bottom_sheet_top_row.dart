@@ -24,7 +24,7 @@ class BottomSheetTopRow extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(header.tr, style: interRegularLarge.copyWith(fontWeight: FontWeight.w600)),
+            Text(header.tr, style: regularLarge.copyWith(fontWeight: FontWeight.w600)),
             CustomCircleAnimatedButton(
               press: (){
                 Get.back();

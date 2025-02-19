@@ -13,7 +13,7 @@ class HeaderText extends StatelessWidget {
     Key? key,
     required this.text,
     this.textAlign,
-    this.textStyle = interSemiBoldExtraLarge
+    this.textStyle = semiBoldExtraLarge
   }) : super(key: key);
 
   @override

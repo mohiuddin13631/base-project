@@ -77,7 +77,7 @@ class _NewDepositScreenState extends State<NewDepositScreen> {
                         items: controller.methodList.map((Methods bank) {
                           return DropdownMenuItem<Methods>(
                             value: bank,
-                            child: Text((bank.name??'').tr, style: interRegularDefault),
+                            child: Text((bank.name??'').tr, style: regularDefault),
                           );
                         }).toList(),),
                       const SizedBox(height: Dimensions.space15),

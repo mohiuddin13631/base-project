@@ -95,7 +95,7 @@ class _LabelTextFieldState extends State<LabelTextField> {
                 maxLines: widget.maxLines,
                 readOnly: widget.readOnly,
                 style: widget.inputTextStyle ??
-                interRegularDefault.copyWith(color: MyColor.getTextColor()),
+                regularDefault.copyWith(color: MyColor.getTextColor()),
                 cursorColor: MyColor.getTextColor(),
                 controller: widget.controller,
                 autofocus: false,
@@ -108,7 +108,7 @@ class _LabelTextFieldState extends State<LabelTextField> {
                 decoration: InputDecoration(
                   contentPadding: widget.contentPadding,
                   hintText: widget.hintText?.tr ?? '',
-                  hintStyle: interRegularDefault.copyWith(color: widget.hintTextColor),
+                  hintStyle: regularDefault.copyWith(color: widget.hintTextColor),
                   fillColor: widget.fillColor,
                   filled: true,
                   border: OutlineInputBorder(borderSide: BorderSide(width: 0.5, color: MyColor.getTextFieldDisableBorder()), borderRadius: BorderRadius.circular(widget.radius)),
@@ -155,7 +155,7 @@ class _LabelTextFieldState extends State<LabelTextField> {
                 onTap: widget.onTap,
                 maxLines: widget.maxLines,
                 readOnly: widget.readOnly,
-                style: widget.inputTextStyle ?? interRegularDefault.copyWith(color: MyColor.getTextColor()),
+                style: widget.inputTextStyle ?? regularDefault.copyWith(color: MyColor.getTextColor()),
                 cursorColor: MyColor.getTextColor(),
                 controller: widget.controller,
                 autofocus: false,
@@ -169,7 +169,7 @@ class _LabelTextFieldState extends State<LabelTextField> {
                   contentPadding: widget.contentPadding,
                   hintText: widget.hintText?.tr ?? '',
                   hintStyle:
-                      interRegularDefault.copyWith(color: widget.hintTextColor),
+                      regularDefault.copyWith(color: widget.hintTextColor),
                   fillColor: widget.fillColor,
                   filled: true,
                   border: OutlineInputBorder(borderSide: BorderSide(width: 0.5, color: MyColor.getTextFieldDisableBorder()), borderRadius: BorderRadius.circular(widget.radius)),
@@ -219,7 +219,7 @@ class _LabelTextFieldState extends State<LabelTextField> {
                     maxLines: widget.maxLines,
                     readOnly: widget.readOnly,
                     style: widget.inputTextStyle ??
-        interRegularDefault.copyWith(color: MyColor.getTextColor()),
+        regularDefault.copyWith(color: MyColor.getTextColor()),
                     cursorColor: MyColor.getTextColor(),
                     controller: widget.controller,
                     autofocus: false,
@@ -232,7 +232,7 @@ class _LabelTextFieldState extends State<LabelTextField> {
                     decoration: InputDecoration(
                       contentPadding: widget.contentPadding,
                       hintText: widget.hintText?.tr ?? '',
-                      hintStyle: interRegularDefault.copyWith(color: widget.hintTextColor),
+                      hintStyle: regularDefault.copyWith(color: widget.hintTextColor),
                       fillColor: widget.fillColor,
                       filled: true,
                       border: UnderlineInputBorder(borderSide: BorderSide(width: 0.5, color: MyColor.getTextFieldDisableBorder())),

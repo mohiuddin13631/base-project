@@ -33,7 +33,7 @@ class _AlreadyVerifiedWidgetState extends State<AlreadyVerifiedWidget> {
         children: [
           SvgPicture.asset(widget.isPending?MyIcons.pendingIcon:MyIcons.verifiedIcon,height: 100,width: 100,fit: BoxFit.cover,),
           const SizedBox(height: 25,),
-          Text(widget.isPending?MyStrings.kycUnderReviewMsg.tr:MyStrings.kycAlreadyVerifiedMsg.tr,style: interRegularDefault.copyWith(color: MyColor.getTextColor(),fontSize: Dimensions.fontExtraLarge,)),
+          Text(widget.isPending?MyStrings.kycUnderReviewMsg.tr:MyStrings.kycAlreadyVerifiedMsg.tr,style: regularDefault.copyWith(color: MyColor.getTextColor(),fontSize: Dimensions.fontExtraLarge,)),
           const SizedBox(height: 40,)
         ],
       ),

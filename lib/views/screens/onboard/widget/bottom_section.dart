@@ -33,7 +33,7 @@ class BottomSection extends StatelessWidget {
             color: MyColor.colorAmber,
             borderRadius: BorderRadius.circular(8)
           ),
-          child: Text(MyStrings.getStarted,style: interBoldLarge.copyWith(color: MyColor.colorBlack,fontWeight: FontWeight.w600),),
+          child: Text(MyStrings.getStarted,style: boldLarge.copyWith(color: MyColor.colorBlack,fontWeight: FontWeight.w600),),
         ),
       ) :  Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -42,7 +42,7 @@ class BottomSection extends StatelessWidget {
             onPressed: () {
               controller.pageController.jumpToPage(controller.onboardImageList.length - 1);
             },
-            child: Text(MyStrings.skip.tr,style: interMediumLarge.copyWith(color: MyColor.onboardContentColor)),
+            child: Text(MyStrings.skip.tr,style: mediumLarge.copyWith(color: MyColor.onboardContentColor)),
           ),
 
           Row(
@@ -67,7 +67,7 @@ class BottomSection extends StatelessWidget {
                 controller.pageController.nextPage(duration: const Duration(milliseconds: 1), curve: Curves.easeInSine);
               }
             },
-            child: Text(controller.onboardImageList.length - 1 == index ? MyStrings.finish.tr : MyStrings.next.tr,style: interMediumLarge.copyWith(color: MyColor.onboardContentColor),),
+            child: Text(controller.onboardImageList.length - 1 == index ? MyStrings.finish.tr : MyStrings.next.tr,style: mediumLarge.copyWith(color: MyColor.onboardContentColor),),
           ),
 
         ],

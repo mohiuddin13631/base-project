@@ -22,7 +22,7 @@ class LabelText extends StatelessWidget {
     return required?FormRow(label: text.tr, isRequired: true):Text(
       text.tr,
       textAlign: textAlign,
-      style: interRegularDefault.copyWith(color: MyColor.getLabelTextColor()),
+      style: regularDefault.copyWith(color: MyColor.getLabelTextColor()),
     );
   }
 }

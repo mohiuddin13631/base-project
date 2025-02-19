@@ -52,7 +52,7 @@ class _TicketDetailsScreenState extends State<TicketDetailsScreen> {
       builder: (controller) => Scaffold(
         backgroundColor: MyColor.colorWhite,
           appBar: AppBar(
-            title: Text(MyStrings.replyTicket,style: interMediumMediumLarge.copyWith(color: MyColor.colorBlack),),
+            title: Text(MyStrings.replyTicket,style: mediumMediumLarge.copyWith(color: MyColor.colorBlack),),
             backgroundColor: MyColor.colorWhite,
             actions: [
               if (controller.model.data?.myTickets?.status != '3')
@@ -118,7 +118,7 @@ class _TicketDetailsScreenState extends State<TicketDetailsScreen> {
                                     Expanded(
                                       child: Text(
                                         "[${MyStrings.ticket.tr}#${controller.model.data?.myTickets?.ticket ?? ''}] ${controller.model.data?.myTickets?.subject ?? ''}",
-                                        style: interSemiBoldDefault.copyWith(
+                                        style: semiBoldDefault.copyWith(
                                           color: MyColor.colorBlack,
                                         ),
                                         maxLines: 2,
@@ -135,7 +135,7 @@ class _TicketDetailsScreenState extends State<TicketDetailsScreen> {
                                       ),
                                       child: Text(
                                         controller.getStatusText(controller.model.data?.myTickets?.status ?? '0'),
-                                        style: interRegularDefault.copyWith(color: controller.getStatusColor(controller.model.data?.myTickets?.status ?? "0",isPriority: true),),
+                                        style: regularDefault.copyWith(color: controller.getStatusColor(controller.model.data?.myTickets?.status ?? "0",isPriority: true),),
                                       ),
                                     ),
                                   ],
@@ -203,13 +203,13 @@ class _TicketDetailsScreenState extends State<TicketDetailsScreen> {
                                     ),
                                     child: Text(
                                       MyStrings.upload,
-                                      style: interRegularDefault.copyWith(color: MyColor.colorWhite),
+                                      style: regularDefault.copyWith(color: MyColor.colorWhite),
                                     ),
                                   ),
                                 ),
                               ),
                               const SizedBox(height: 2),
-                              Text(MyStrings.supportedFileHint, style: interRegularSmall.copyWith(color: MyColor.getGreyText())),
+                              Text(MyStrings.supportedFileHint, style: regularSmall.copyWith(color: MyColor.getGreyText())),
                               const SizedBox(height: Dimensions.space20),
                               controller.attachmentList.isNotEmpty
                                   ? SingleChildScrollView(
@@ -321,7 +321,7 @@ class _TicketDetailsScreenState extends State<TicketDetailsScreen> {
                                   children: [
                                     Text(
                                       MyStrings.noMSgFound.tr,
-                                      style: interRegularDefault.copyWith(color: MyColor.colorGrey),
+                                      style: regularDefault.copyWith(color: MyColor.colorGrey),
                                     ),
                                   ],
                                 ))
@@ -399,23 +399,23 @@ class TicketViewCommentReplyModel extends StatelessWidget {
                               if (messages.admin == null)
                                 Text(
                                   '${messages.ticket?.name}',
-                                  style: interBoldDefault.copyWith(color: MyColor.getTextColor()),
+                                  style: boldDefault.copyWith(color: MyColor.getTextColor()),
                                 )
                               else
                                 Text(
                                   '${messages.admin?.name}',
-                                  style: interBoldDefault.copyWith(color: MyColor.getTextColor()),
+                                  style: boldDefault.copyWith(color: MyColor.getTextColor()),
                                 ),
                               Text(
                                 messages.adminId == "1" ? MyStrings.admin.tr : MyStrings.you.tr,
-                                style: interRegularDefault.copyWith(color: MyColor.bodyTextColor),
+                                style: regularDefault.copyWith(color: MyColor.bodyTextColor),
                               ),
                             ],
                           ),
                           const SizedBox(width: 8),
                           Text(
                             DateConverter.getFormatedSubtractTime(messages.createdAt ?? ''),
-                            style: interRegularDefault.copyWith(color: MyColor.bodyTextColor),
+                            style: regularDefault.copyWith(color: MyColor.bodyTextColor),
                           ),
                         ],
                       ),
@@ -432,7 +432,7 @@ class TicketViewCommentReplyModel extends StatelessWidget {
                           ),
                           child: Text(
                             messages.message ?? "",
-                            style: interRegularDefault.copyWith(
+                            style: regularDefault.copyWith(
                               color: MyColor.bodyTextColor,
                             ),
                           ),

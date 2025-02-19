@@ -37,7 +37,7 @@ class _LanguageDialogBodyState extends State<LanguageDialogBody> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Center(child: Text(MyStrings.selectALanguage,style: interRegularDefault.copyWith(color:MyColor.getTextColor(),fontSize: Dimensions.fontLarge),),),
+          Center(child: Text(MyStrings.selectALanguage,style: regularDefault.copyWith(color:MyColor.getTextColor(),fontSize: Dimensions.fontLarge),),),
           const SizedBox(height: Dimensions.space15,),
           Flexible(child: ListView.builder(
               shrinkWrap: true,
@@ -99,7 +99,7 @@ class _LanguageDialogBodyState extends State<LanguageDialogBody> {
                           child: CircularProgressIndicator(color: MyColor.primaryColor)),
                     ):Text(
                      ( widget.langList[index].languageName).tr,
-                      style: interRegularDefault.copyWith(color: MyColor.getTextColor()),
+                      style: regularDefault.copyWith(color: MyColor.getTextColor()),
                     ),
                   ),
                 );

@@ -29,7 +29,7 @@ class ChooseFileItem extends StatelessWidget {
             padding: const EdgeInsets.all(Dimensions.space5),
             decoration: BoxDecoration(color:MyColor.primaryColor600, borderRadius: BorderRadius.circular(5)),
             alignment: Alignment.center,
-            child: Text(MyStrings.chooseFile.tr, textAlign: TextAlign.center, style: interRegularDefault.copyWith(color: MyColor.getPrimaryColor(), fontWeight: FontWeight.w500)),
+            child: Text(MyStrings.chooseFile.tr, textAlign: TextAlign.center, style: regularDefault.copyWith(color: MyColor.getPrimaryColor(), fontWeight: FontWeight.w500)),
           ),
           const SizedBox(width: Dimensions.space15,),
           Expanded(
@@ -37,13 +37,13 @@ class ChooseFileItem extends StatelessWidget {
             child: TextField(
               readOnly: true,
               cursorColor: MyColor.getTextColor(),
-              style: interRegularDefault.copyWith(color: MyColor.getTextColor()),
+              style: regularDefault.copyWith(color: MyColor.getTextColor()),
               keyboardType: TextInputType.number,
               controller: TextEditingController(text: fileName.tr),
               decoration: InputDecoration(
                   contentPadding: const EdgeInsets.only(bottom: 16),
                   hintText: fileName.tr,
-                  hintStyle: interRegularSmall.copyWith(color: MyColor.hintTextColor, height: 1.452,overflow: TextOverflow.ellipsis),
+                  hintStyle: regularSmall.copyWith(color: MyColor.hintTextColor, height: 1.452,overflow: TextOverflow.ellipsis),
                   border: InputBorder.none,
                   focusedBorder: InputBorder.none,
                   enabledBorder: InputBorder.none,

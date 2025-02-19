@@ -77,16 +77,16 @@ class _SmsVerificationScreenState extends State<SmsVerificationScreen> {
                       const SizedBox(height: Dimensions.space50),
                       Padding(
                         padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*.1),
-                        child: Text(MyStrings.smsVerificationMsg.tr, maxLines: 2, textAlign: TextAlign.center,style: interRegularDefault.copyWith(color: MyColor.labelTextColor)),
+                        child: Text(MyStrings.smsVerificationMsg.tr, maxLines: 2, textAlign: TextAlign.center,style: regularDefault.copyWith(color: MyColor.labelTextColor)),
                       ),
                       const SizedBox(height: 30),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: Dimensions.space30),
                         child: PinCodeTextField(
                           appContext: context,
-                          pastedTextStyle: interRegularDefault.copyWith(color: MyColor.primaryColor),
+                          pastedTextStyle: regularDefault.copyWith(color: MyColor.primaryColor),
                           length: 6,
-                          textStyle: interRegularDefault.copyWith(color: MyColor.primaryColor),
+                          textStyle: regularDefault.copyWith(color: MyColor.primaryColor),
                           obscureText: false,
                           obscuringCharacter: '*',
                           blinkWhenObscuring: false,
@@ -132,7 +132,7 @@ class _SmsVerificationScreenState extends State<SmsVerificationScreen> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(MyStrings.didNotReceiveCode.tr, style: interRegularDefault.copyWith(color: MyColor.labelTextColor)),
+                          Text(MyStrings.didNotReceiveCode.tr, style: regularDefault.copyWith(color: MyColor.labelTextColor)),
                           const SizedBox(width: Dimensions.space10),
                           controller.resendLoading ?
                           Container(margin: const EdgeInsets.all(5),height:20,width:20,child: const CircularProgressIndicator(color: MyColor.primaryColor)):
@@ -142,7 +142,7 @@ class _SmsVerificationScreenState extends State<SmsVerificationScreen> {
                               },
                               child: Text(
                                   MyStrings.resend.tr,
-                                  style: interRegularDefault.copyWith(decoration: TextDecoration.underline, color: MyColor.primaryColor)
+                                  style: regularDefault.copyWith(decoration: TextDecoration.underline, color: MyColor.primaryColor)
                               )
                           ),
                         ],

@@ -15,7 +15,7 @@ class DefaultText extends StatelessWidget {
     Key? key,
     required this.text,
     this.textAlign,
-    this.textStyle = interRegularDefault,
+    this.textStyle = regularDefault,
     this.maxLines = 2,
     this.textColor,
     this.fontSize = Dimensions.fontDefault

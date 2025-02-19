@@ -30,7 +30,7 @@ class CountryTextField extends StatelessWidget {
         child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children:  [
-              Text(text.tr,style: interRegularDefault.copyWith(color: MyColor.colorBlack),),
+              Text(text.tr,style: regularDefault.copyWith(color: MyColor.colorBlack),),
               Icon(Icons.expand_more_rounded,color: MyColor.getGreyText(),size: 20,)
             ],
           ),

@@ -58,7 +58,7 @@ class _CustomDropDownTextFieldState extends State<CustomDropDownTextField> {
                 underline: Container(),
                 hint: Text(
                   widget.selectedValue??'',
-                  style:interSemiBoldDefault.copyWith(color: MyColor.getTextColor()),
+                  style:semiBoldDefault.copyWith(color: MyColor.getTextColor()),
                 ), // Not necessary for Option 1
                 value: widget.selectedValue,
                 dropdownColor: MyColor.colorGrey1,
@@ -69,7 +69,7 @@ class _CustomDropDownTextFieldState extends State<CustomDropDownTextField> {
                     value: value,
                     child: Text(
                       value.tr,
-                      style: interRegularDefault.copyWith(color: MyColor.getTextColor()),
+                      style: regularDefault.copyWith(color: MyColor.getTextColor()),
                     ),
                   );
                 }).toList(),

@@ -29,7 +29,7 @@ class CustomSnackBar{
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const SizedBox(height: 2,),
-          Text(message,style: interRegularDefault.copyWith(color: MyColor.colorWhite ),),
+          Text(message,style: regularDefault.copyWith(color: MyColor.colorWhite ),),
         ],
       ),
       dismissDirection: DismissDirection.horizontal,
@@ -38,7 +38,7 @@ class CustomSnackBar{
         children: [
           SvgPicture.asset(MyImages.errorIcon,height: 20,width: 20,color: MyColor.colorWhite,),
           const SizedBox(width: 5),
-          Text(MyStrings.error.tr.capitalizeFirst??'',style: interSemiBoldSmall.copyWith(fontSize: Dimensions.fontLarge,color: MyColor.colorWhite)),
+          Text(MyStrings.error.tr.capitalizeFirst??'',style: semiBoldSmall.copyWith(fontSize: Dimensions.fontLarge,color: MyColor.colorWhite)),
         ],
       ),*/
       backgroundColor: MyColor.red,
@@ -77,7 +77,7 @@ class CustomSnackBar{
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const SizedBox(height: 2,),
-          Text(message,style: interRegularDefault.copyWith(color: MyColor.colorWhite)),
+          Text(message,style: regularDefault.copyWith(color: MyColor.colorWhite)),
         ],
       ),
       dismissDirection: DismissDirection.horizontal,
@@ -86,7 +86,7 @@ class CustomSnackBar{
         children: [
           SvgPicture.asset(MyImages.successIcon,height: 20,width: 20,color: MyColor.colorWhite,),
           const SizedBox(width: 5,),
-          Text(MyStrings.success.tr,style: interSemiBoldSmall.copyWith(fontSize: Dimensions.fontLarge, color: MyColor.colorWhite)),
+          Text(MyStrings.success.tr,style: semiBoldSmall.copyWith(fontSize: Dimensions.fontLarge, color: MyColor.colorWhite)),
         ],
       ),
       backgroundColor: MyColor.greenSuccessColor,

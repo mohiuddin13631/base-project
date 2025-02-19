@@ -36,7 +36,7 @@ class _SocialLoginSectionState extends State<SocialLoginSection> {
             Center(
               child: Text(
                 MyStrings.or.tr,
-                style: interLightDefault.copyWith(color: MyColor.getSecondaryTextColor()),
+                style: lightDefault.copyWith(color: MyColor.getSecondaryTextColor()),
               ),
             ),
             if (controller.checkSocialAuthActiveOrNot(provider: 'google')) ...[

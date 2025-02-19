@@ -182,13 +182,13 @@ class _RegistrationFormState extends State<RegistrationForm> {
                     const SizedBox(width: 8,),
                     Row(
                       children: [
-                        Text(MyStrings.iAgreeWith.tr, style: interRegularDefault.copyWith(color: MyColor.colorBlack)),
+                        Text(MyStrings.iAgreeWith.tr, style: regularDefault.copyWith(color: MyColor.colorBlack)),
                         const SizedBox(width: 3),
                         GestureDetector(
                           onTap: (){
                             Get.toNamed(RouteHelper.privacyScreen);
                           },
-                          child: Text(MyStrings.privacyPolicies.tr.toLowerCase(), style: interSemiBoldDefault.copyWith(
+                          child: Text(MyStrings.privacyPolicies.tr.toLowerCase(), style: semiBoldDefault.copyWith(
                               color: MyColor.primaryColor,
                               decoration: TextDecoration.underline,
                               fontSize: Dimensions.fontSmall,

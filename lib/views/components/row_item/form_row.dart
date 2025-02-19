@@ -18,8 +18,8 @@ class FormRow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Text(label.tr,style: interRegularDefault.copyWith(color: MyColor.getLabelTextColor()),),
-        Text(isRequired?' *':'',style: interBoldDefault.copyWith(color: MyColor.red),)
+        Text(label.tr,style: regularDefault.copyWith(color: MyColor.getLabelTextColor()),),
+        Text(isRequired?' *':'',style: boldDefault.copyWith(color: MyColor.red),)
       ],
     );
   }

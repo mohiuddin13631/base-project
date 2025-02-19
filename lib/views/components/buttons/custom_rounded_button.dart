@@ -58,7 +58,7 @@ class CustomRoundedButton extends StatelessWidget {
                 SvgPicture.asset(svgImage!, height: imageSize,width: imageSize,color: textColor,) :
             svgImage != null ? const SizedBox(width: Dimensions.space7): const SizedBox.shrink(),
             svgImage != null ? const SizedBox(width: 8,) : const SizedBox.shrink(),
-            Text(labelName.tr,style: interMediumLarge.copyWith(color: textColor,fontSize: 15),)
+            Text(labelName.tr,style: mediumLarge.copyWith(color: textColor,fontSize: 15),)
           ],
         ),
       ),

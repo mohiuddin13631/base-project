@@ -38,14 +38,14 @@ class TicketRow extends StatelessWidget {
               flex: 1,
               child: Text(
                 header,
-                style: interRegularDefault.copyWith(color: textColor ?? MyColor.getPrimaryTextColor()),
+                style: regularDefault.copyWith(color: textColor ?? MyColor.getPrimaryTextColor()),
               ),
             ),
             Flexible(
               child: isSubject
                   ? Text(
                       value,
-                      style: interRegularDefault.copyWith(color: textColor ?? MyColor.getPrimaryTextColor()),
+                      style: regularDefault.copyWith(color: textColor ?? MyColor.getPrimaryTextColor()),
                       textAlign: TextAlign.end,
                       maxLines: 2,
                     )
@@ -60,14 +60,14 @@ class TicketRow extends StatelessWidget {
                               borderRadius: BorderRadius.circular(Dimensions.defaultRadius)),
                           child: Text(
                             value,
-                            style: interRegularDefault.copyWith(color: MyColor.colorWhite),
+                            style: regularDefault.copyWith(color: MyColor.colorWhite),
                           ),
                         )
                       : isStatus
-                          ? Text(value, style: interBoldDefault.copyWith(color: textColor))
+                          ? Text(value, style: boldDefault.copyWith(color: textColor))
                           : Text(
                               value,
-                              style: interRegularDefault.copyWith(color: MyColor.getTextColor()),
+                              style: regularDefault.copyWith(color: MyColor.getTextColor()),
                             ),
             )
           ],

@@ -74,7 +74,7 @@ class _AddWithdrawMethodState extends State<AddWithdrawMethod> {
                     items: controller.withdrawMethodList.map((WithdrawMethod method) {
                         return DropdownMenuItem<WithdrawMethod>(
                           value: method,
-                          child: Text((method.name??'').tr, style: interRegularDefault.copyWith(color: MyColor.getTextColor())),
+                          child: Text((method.name??'').tr, style: regularDefault.copyWith(color: MyColor.getTextColor())),
                         );
                       }).toList()),
                   const SizedBox(height: Dimensions.space15),
@@ -109,7 +109,7 @@ class _AddWithdrawMethodState extends State<AddWithdrawMethod> {
                        items: controller.authorizationList.map((String value) {
                          return DropdownMenuItem<String>(
                            value: value,
-                           child: Text((value.toString()).tr, style: interRegularDefault.copyWith(color: MyColor.getTextColor())),
+                           child: Text((value.toString()).tr, style: regularDefault.copyWith(color: MyColor.getTextColor())),
                          );
                        }).toList()),
                    ],

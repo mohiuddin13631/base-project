@@ -99,7 +99,7 @@ class _LoginFormState extends State<LoginForm> {
                       ),
                       const SizedBox(width: Dimensions.space10),
                       Text(MyStrings.rememberMe.tr,
-                        style: interRegularSmall.copyWith(color: MyColor.colorBlack),overflow: TextOverflow.ellipsis,)
+                        style: regularSmall.copyWith(color: MyColor.colorBlack),overflow: TextOverflow.ellipsis,)
 
 
                     ],
@@ -110,7 +110,7 @@ class _LoginFormState extends State<LoginForm> {
                     controller.clearData();
                     controller.forgetPassword();
                   },
-                  child: Text(MyStrings.loginForgotPassword.tr, style: interRegularSmall.copyWith(color: MyColor.primaryColor,decorationColor:MyColor.primaryColor,decoration: TextDecoration.underline)),
+                  child: Text(MyStrings.loginForgotPassword.tr, style: regularSmall.copyWith(color: MyColor.primaryColor,decorationColor:MyColor.primaryColor,decoration: TextDecoration.underline)),
                 )
               ],
             ),

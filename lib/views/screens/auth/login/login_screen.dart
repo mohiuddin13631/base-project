@@ -73,11 +73,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Center(child: Image.asset(MyImages.appLogo,width: 200,height: 90)),
-                       /* Text(MyStrings.loginTitle.tr, style: interRegularDefault.copyWith(fontSize:Dimensions.fontHeader2,fontWeight: FontWeight.w500)),
+                       /* Text(MyStrings.loginTitle.tr, style: regularDefault.copyWith(fontSize:Dimensions.fontHeader2,fontWeight: FontWeight.w500)),
                         const SizedBox(height: 15),
                         Padding(
                           padding:EdgeInsetsDirectional.only(end: MediaQuery.of(context).size.width*.4),
-                          child: Text(MyStrings.loginSologan.tr, textAlign: TextAlign.left,style: interRegularDefault.copyWith(color: MyColor.getGreyText()),)
+                          child: Text(MyStrings.loginSologan.tr, textAlign: TextAlign.left,style: regularDefault.copyWith(color: MyColor.getGreyText()),)
                         ),*/
                         const SizedBox(height: Dimensions.space30),
                         const LoginForm()

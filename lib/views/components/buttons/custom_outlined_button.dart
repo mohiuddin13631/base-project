@@ -62,7 +62,7 @@ class CustomOutlinedBtn extends StatelessWidget {
                   )
                 : Text(
                     btnText, //
-                    style: textStyle ?? interBoldDefault.copyWith(color: textColor),
+                    style: textStyle ?? boldDefault.copyWith(color: textColor),
                   ),
           )
         : OutlinedButton(
@@ -90,7 +90,7 @@ class CustomOutlinedBtn extends StatelessWidget {
                 : Text(
                     btnText, //
                     style: textStyle ??
-                        interBoldDefault.copyWith(
+                        boldDefault.copyWith(
                           color: textColor,
                         ),
                   ),

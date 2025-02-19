@@ -16,9 +16,9 @@ class BottomSheetColumn extends StatelessWidget {
     return Column(
       crossAxisAlignment: alignmentEnd?CrossAxisAlignment.end:CrossAxisAlignment.start,
       children: [
-        Text(header.tr,style: interLightDefault.copyWith(color: MyColor.getBodyTextColor()),overflow: TextOverflow.ellipsis,),
+        Text(header.tr,style: lightDefault.copyWith(color: MyColor.getBodyTextColor()),overflow: TextOverflow.ellipsis,),
         const SizedBox(height: 5,),
-        Text(body.tr,style: isCharge?interRegularDefault.copyWith(color: MyColor.redCancelTextColor):interRegularDefault,overflow: TextOverflow.ellipsis,)
+        Text(body.tr,style: isCharge?regularDefault.copyWith(color: MyColor.redCancelTextColor):regularDefault,overflow: TextOverflow.ellipsis,)
       ],
     );
   }

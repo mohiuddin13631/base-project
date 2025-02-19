@@ -14,7 +14,7 @@ class SmallText extends StatelessWidget {
     required this.text,
     this.textAlign,
     this.maxLine = 1,
-    this.textStyle = interRegularSmall
+    this.textStyle = regularSmall
   });
 
   @override

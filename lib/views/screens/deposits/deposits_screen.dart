@@ -70,7 +70,7 @@ class _DepositsScreenState extends State<DepositsScreen> {
           child: Scaffold(
             backgroundColor: MyColor.containerBgColor,
             appBar: AppBar(
-              title: Text(MyStrings.deposits, style: interRegularLarge.copyWith(color: MyColor.colorWhite)),
+              title: Text(MyStrings.deposits, style: regularLarge.copyWith(color: MyColor.colorWhite)),
               backgroundColor: MyColor.primaryColor,
               elevation: 0,
               leading: IconButton(

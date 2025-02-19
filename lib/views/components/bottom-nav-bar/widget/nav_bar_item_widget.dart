@@ -49,7 +49,7 @@ class NavBarItem extends StatelessWidget {
             const SizedBox(height: 4),
             Text(
               label.tr, textAlign: TextAlign.center,
-              style: interMediumDefault.copyWith(color: isSelected ? MyColor.primaryColor : MyColor.getPrimaryTextColor(),fontWeight: isSelected? FontWeight.w600 : FontWeight.w500,fontSize: 11)
+              style: mediumDefault.copyWith(color: isSelected ? MyColor.primaryColor : MyColor.getPrimaryTextColor(),fontWeight: isSelected? FontWeight.w600 : FontWeight.w500,fontSize: 11)
             )
           ],
         )
@@ -80,7 +80,7 @@ class NavBarItem extends StatelessWidget {
             const SizedBox(width: 4),
             Text(
               label.tr, textAlign: TextAlign.center,
-              style: interMediumDefault.copyWith(color: isSelected ? MyColor.colorWhite : MyColor.getPrimaryTextColor(),fontWeight: isSelected? FontWeight.w600 : FontWeight.w500)
+              style: mediumDefault.copyWith(color: isSelected ? MyColor.colorWhite : MyColor.getPrimaryTextColor(),fontWeight: isSelected? FontWeight.w600 : FontWeight.w500)
             )
           ],
         ),

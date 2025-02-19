@@ -41,14 +41,14 @@ class UserInfoField extends StatelessWidget {
           children: [
             Text(
               label,
-              style: interRegularSmall.copyWith(color: MyColor.getLabelTextColor(), fontWeight: FontWeight.w500),
+              style: regularSmall.copyWith(color: MyColor.getLabelTextColor(), fontWeight: FontWeight.w500),
             ),
 
             const SizedBox(height: Dimensions.space5),
 
             Text(
               value,
-              style: interRegularDefault.copyWith(color: MyColor.getTextColor()),
+              style: regularDefault.copyWith(color: MyColor.getTextColor()),
             ),
           ],
         ),

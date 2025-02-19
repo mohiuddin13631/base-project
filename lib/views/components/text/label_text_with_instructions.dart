@@ -31,7 +31,7 @@ class LabelTextInstruction extends StatelessWidget {
     return isRequired
         ? Row(
             children: [
-              Text(text.tr, textAlign: textAlign, style: textStyle ?? interSemiBoldDefault.copyWith(color: MyColor.labelTextColor)),
+              Text(text.tr, textAlign: textAlign, style: textStyle ?? semiBoldDefault.copyWith(color: MyColor.labelTextColor)),
               const SizedBox(
                 width: 2,
               ),
@@ -56,7 +56,7 @@ class LabelTextInstruction extends StatelessWidget {
               ],
               Text(
                 '*',
-                style: interSemiBoldDefault.copyWith(color: MyColor.colorRed),
+                style: semiBoldDefault.copyWith(color: MyColor.colorRed),
               ),
             ],
           )
@@ -65,7 +65,7 @@ class LabelTextInstruction extends StatelessWidget {
               Text(
                 text.tr,
                 textAlign: textAlign,
-                style: textStyle ?? interSemiBoldDefault.copyWith(color: MyColor.labelTextColor),
+                style: textStyle ?? semiBoldDefault.copyWith(color: MyColor.labelTextColor),
               ),
               if (instructions != null) ...[
                 Padding(

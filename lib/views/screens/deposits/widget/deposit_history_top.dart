@@ -31,7 +31,7 @@ class _DepositHistoryTopState extends State<DepositHistoryTop> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(MyStrings.transactionNumber.tr, style: interRegularSmall.copyWith(color: MyColor.labelTextColor, fontWeight: FontWeight.w500)),
+            Text(MyStrings.transactionNumber.tr, style: regularSmall.copyWith(color: MyColor.labelTextColor, fontWeight: FontWeight.w500)),
             const SizedBox(height: Dimensions.space5 + 3),
             IntrinsicHeight(
               child: Row(

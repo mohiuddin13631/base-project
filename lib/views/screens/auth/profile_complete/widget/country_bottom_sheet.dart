@@ -63,7 +63,7 @@ class CountryBottomSheet {
                     Icons.search,
                     color: Colors.grey,
                   ),
-                  labelTextStyle: interBoldDefault.copyWith(),
+                  labelTextStyle: boldDefault.copyWith(),
                   fillColor: MyColor.colorGrey.withOpacity(0.01),
                 ),
                 const SizedBox(height: 15),
@@ -101,7 +101,7 @@ class CountryBottomSheet {
                                 Expanded(
                                   child: Text(
                                     '+${controller.filteredCountries[index].dialCode}  ${controller.filteredCountries[index].country?.tr ?? ''}',
-                                    style: interRegularDefault.copyWith(color: MyColor.getTextColor()),
+                                    style: regularDefault.copyWith(color: MyColor.getTextColor()),
                                   ),
                                 ),
                               ],

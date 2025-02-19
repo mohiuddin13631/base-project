@@ -43,7 +43,7 @@ class LanguageCard extends StatelessWidget {
                 height: 50,
               ),
               const SizedBox(height: Dimensions.space10),
-              Text(langeName.tr, style: interSemiBoldSmall.copyWith(color: MyColor.getTextColor()),)
+              Text(langeName.tr, style: semiBoldSmall.copyWith(color: MyColor.getTextColor()),)
             ],
           ),
         ),

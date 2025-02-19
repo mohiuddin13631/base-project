@@ -50,7 +50,7 @@ class OperatorWidget extends StatelessWidget {
               errorWidget: (context, url, error) => Image.asset(MyImages.tower,width: 25,height: 25,),
             ),
             const SizedBox(width: 14,),
-            Expanded(child: Text(title ?? "".tr,style: interRegularLarge.copyWith(color:MyColor.colorBlack),maxLines: 1,overflow: TextOverflow.ellipsis,)),
+            Expanded(child: Text(title ?? "".tr,style: regularLarge.copyWith(color:MyColor.colorBlack),maxLines: 1,overflow: TextOverflow.ellipsis,)),
 
             isShowChangeButton ?
             Container(
@@ -59,7 +59,7 @@ class OperatorWidget extends StatelessWidget {
                   borderRadius: BorderRadius.circular(4),
                   color: MyColor.primaryColor
               ),
-              child: Text(MyStrings.change.tr,style: interMediumLarge.copyWith(color: MyColor.textColor),),
+              child: Text(MyStrings.change.tr,style: mediumLarge.copyWith(color: MyColor.textColor),),
             ) : const SizedBox.shrink()
           ],
         ),

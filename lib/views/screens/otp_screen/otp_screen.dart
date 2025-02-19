@@ -66,17 +66,17 @@ class _OtpScreenState extends State<OtpScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(MyStrings.enterYourOTPCode.tr, style: interRegularMediumLarge.copyWith(color: MyColor.colorBlack, fontWeight: FontWeight.w600)),
+                        Text(MyStrings.enterYourOTPCode.tr, style: regularMediumLarge.copyWith(color: MyColor.colorBlack, fontWeight: FontWeight.w600)),
                         const SizedBox(height: Dimensions.space10),
-                        Text(controller.otpType=="sms"?MyStrings.sixDigitSMSOtpMsg:controller.otpType == "email"?MyStrings.sixDigitEmailOtpMsg:controller.otpType=='2fa'?MyStrings.twoFactorMsg.tr:'', maxLines: 2, textAlign: TextAlign.start, style: interRegularLarge.copyWith(color: MyColor.getGreyText())),
+                        Text(controller.otpType=="sms"?MyStrings.sixDigitSMSOtpMsg:controller.otpType == "email"?MyStrings.sixDigitEmailOtpMsg:controller.otpType=='2fa'?MyStrings.twoFactorMsg.tr:'', maxLines: 2, textAlign: TextAlign.start, style: regularLarge.copyWith(color: MyColor.getGreyText())),
                         const SizedBox(height: Dimensions.space30),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: Dimensions.space15),
                           child: PinCodeTextField(
                             appContext: context,
-                            pastedTextStyle: interRegularDefault.copyWith(color: MyColor.getPrimaryColor()),
+                            pastedTextStyle: regularDefault.copyWith(color: MyColor.getPrimaryColor()),
                             length: 6,
-                            textStyle: interRegularLarge.copyWith(color: MyColor.getPrimaryColor()),
+                            textStyle: regularLarge.copyWith(color: MyColor.getPrimaryColor()),
                             obscuringCharacter: '*',
                             animationType: AnimationType.fade,
                             pinTheme: PinTheme(
@@ -111,7 +111,7 @@ class _OtpScreenState extends State<OtpScreen> {
                           children: [
                             controller.isOtpExpired ? Row(
                               children: [
-                                Text(MyStrings.otpHasBeenExpired.tr, style: interRegularDefault.copyWith(color: MyColor.labelTextColor)),
+                                Text(MyStrings.otpHasBeenExpired.tr, style: regularDefault.copyWith(color: MyColor.labelTextColor)),
                                 const SizedBox(width: Dimensions.space12),
                                 controller.resendLoading? Container(
                                     margin:const EdgeInsets.only(left: 5,top: 5),
@@ -121,7 +121,7 @@ class _OtpScreenState extends State<OtpScreen> {
                                   onTap: (){
                                     controller.sendCodeAgain();
                                   },
-                                  child: Text(MyStrings.resend.tr, style: interRegularDefault.copyWith(color: MyColor.getPrimaryColor(),decoration: TextDecoration.underline)),
+                                  child: Text(MyStrings.resend.tr, style: regularDefault.copyWith(color: MyColor.getPrimaryColor(),decoration: TextDecoration.underline)),
                                 )
                               ],
                             ) : OtpTimer(

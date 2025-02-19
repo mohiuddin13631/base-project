@@ -110,7 +110,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                               children: [
                                 Text(controller.notificationList[index].title?.tr??'', style: mulishRegular.copyWith(fontWeight: FontWeight.w500,fontSize: Dimensions.fontLarge)),
                                 const SizedBox(height: Dimensions.space7,),
-                                Text(DateConverter.isoToLocalDateAndTime(controller.notificationList[index].createdAt??''), style: interRegularSmall.copyWith(color: MyColor.smallTextColor2))
+                                Text(DateConverter.isoToLocalDateAndTime(controller.notificationList[index].createdAt??''), style: regularSmall.copyWith(color: MyColor.smallTextColor2))
                               ],
                             ),
                           ],

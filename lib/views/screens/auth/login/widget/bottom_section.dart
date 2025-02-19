@@ -13,14 +13,14 @@ class BottomSection extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(MyStrings.doNotHaveAccount.tr, style: interRegularDefault),
+        Text(MyStrings.doNotHaveAccount.tr, style: regularDefault),
         TextButton(
           onPressed: () {
             Get.offAndToNamed(RouteHelper.registrationScreen);
           },
           child: Text(
             MyStrings.signUpNow.tr,
-            style: interRegularDefault.copyWith(
+            style: regularDefault.copyWith(
                 color: MyColor.primaryColor,
                 decorationColor: MyColor.primaryColor,
                 decoration: TextDecoration.underline

@@ -53,7 +53,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 children: [
                   Text(
                     MyStrings.createNewPassword.tr,
-                    style: interRegularExtraLarge.copyWith(color: MyColor.getTextColor(), fontWeight: FontWeight.w500),
+                    style: regularExtraLarge.copyWith(color: MyColor.getTextColor(), fontWeight: FontWeight.w500),
                   ),
                   const SizedBox(height: 12),
 
@@ -61,7 +61,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                     padding: EdgeInsetsDirectional.only(end: MediaQuery.of(context).size.width*0.3),
                     child: Text(
                       MyStrings.createPasswordSubText.tr,
-                      style: interRegularDefault.copyWith(color: MyColor.getTextColor().withOpacity(0.8)),
+                      style: regularDefault.copyWith(color: MyColor.getTextColor().withOpacity(0.8)),
                     ),
                   ),
                   const SizedBox(height: 50),

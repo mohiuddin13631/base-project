@@ -41,7 +41,7 @@ class _CustomRadioButtonState extends State<CustomRadioButton> {
                     activeColor: MyColor.primaryColor,
                     value: index,
                     groupValue: widget.selectedIndex,
-                    title: Text(widget.list[index].tr,style: interMediumDefault,),
+                    title: Text(widget.list[index].tr,style: mediumDefault,),
                     selected: index==widget.selectedIndex,
                     onChanged: (int? value) {
                       setState((){

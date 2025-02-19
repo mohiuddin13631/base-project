@@ -29,7 +29,7 @@ import '../../../core/utils/style.dart';
       headerAnimationLoop: false,
       animType: AnimType.bottomSlide,
       title: MyStrings.exitTitle.tr,
-      titleTextStyle:interRegularDefault.copyWith(color: MyColor.getTextColor(),fontSize: Dimensions.fontLarge),
+      titleTextStyle:regularDefault.copyWith(color: MyColor.getTextColor(),fontSize: Dimensions.fontLarge),
       showCloseIcon: false,
 
       btnCancel: RoundedButton(text: MyStrings.no.tr, press: (){

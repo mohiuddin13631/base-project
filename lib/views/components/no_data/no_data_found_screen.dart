@@ -57,7 +57,7 @@ class NoDataFoundScreen extends StatelessWidget {
                       children: [
                         Text(MyStrings.noInternet.tr,
                           textAlign: TextAlign.center,
-                          style: interSemiBold.copyWith(
+                          style: semiBold.copyWith(
                               color: MyColor.redCancelTextColor,
                               fontSize: Dimensions.fontLarge),
                         ),
@@ -76,7 +76,7 @@ class NoDataFoundScreen extends StatelessWidget {
                          ),
                          child: Text(
                              MyStrings.retry.tr,
-                             style:interRegularDefault.copyWith(color:MyColor.colorWhite,fontSize: Dimensions.fontSmall)
+                             style:regularDefault.copyWith(color:MyColor.colorWhite,fontSize: Dimensions.fontSmall)
                          ),
                        ))
                       ],

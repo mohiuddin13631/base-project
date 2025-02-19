@@ -59,13 +59,13 @@ class _OtpTimerState extends State<OtpTimer> {
         children: [
           Text(
               MyStrings.otpWillBeExpired.tr,
-              style: interRegularDefault.copyWith(fontSize:Dimensions.fontDefault,color: MyColor.colorBlack,fontWeight: FontWeight.w600)
+              style: regularDefault.copyWith(fontSize:Dimensions.fontDefault,color: MyColor.colorBlack,fontWeight: FontWeight.w600)
           ),
           const SizedBox(width: Dimensions.textToTextSpace),
           Text(
               '${_counter.toString()} ${MyStrings.sec.tr}',
               overflow: TextOverflow.ellipsis,
-              style: interSemiBoldLarge.copyWith(color: isTimeEnd ? MyColor.colorRed : MyColor.primaryColor)
+              style: semiBoldLarge.copyWith(color: isTimeEnd ? MyColor.colorRed : MyColor.primaryColor)
           ),
         ],
       ),

@@ -51,7 +51,7 @@ class EnableQRCodeWidget extends StatelessWidget {
         const SizedBox(height: Dimensions.space12),
         Text(
           MyStrings.setupKey.tr,
-          style: interBoldExtraLarge.copyWith(color: MyColor.getHeadingTextColor()),
+          style: boldExtraLarge.copyWith(color: MyColor.getHeadingTextColor()),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(vertical: Dimensions.space10),
@@ -72,7 +72,7 @@ class EnableQRCodeWidget extends StatelessWidget {
                     Expanded(
                       child: Text(
                         secret,
-                        style: interBoldExtraLarge.copyWith(
+                        style: boldExtraLarge.copyWith(
                           fontSize: Dimensions.fontDefault + 5,
                         ),
                       ),
@@ -114,7 +114,7 @@ class EnableQRCodeWidget extends StatelessWidget {
           child: Text.rich(
             TextSpan(
               children: [
-                TextSpan(text: MyStrings.useQRCODETips2.tr, style: interRegularDefault.copyWith(color: MyColor.getHeadingTextColor())),
+                TextSpan(text: MyStrings.useQRCODETips2.tr, style: regularDefault.copyWith(color: MyColor.getHeadingTextColor())),
                 TextSpan(
                     text: ' ${MyStrings.download}',
                     recognizer: TapGestureRecognizer()
@@ -125,7 +125,7 @@ class EnableQRCodeWidget extends StatelessWidget {
                           throw Exception('Could not launch $url');
                         }
                       },
-                    style: interBoldExtraLarge.copyWith(color: MyColor.colorRed)
+                    style: boldExtraLarge.copyWith(color: MyColor.colorRed)
                 ),
               ],
             ),

@@ -63,7 +63,7 @@ class RoundedButton extends StatelessWidget {
           child: Text(
             text.tr,
             maxLines: 1,
-            style: interRegularDefault.copyWith(color: textColor),
+            style: regularDefault.copyWith(color: textColor),
           ),
         ),
       ),

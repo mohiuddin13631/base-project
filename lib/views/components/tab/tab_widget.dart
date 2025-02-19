@@ -31,7 +31,7 @@ class PlanTabBar extends StatelessWidget {
           ),
           child: Text(
             text.tr,
-            style: interSemiBoldDefault.copyWith(
+            style: semiBoldDefault.copyWith(
                 color: isActive
                     ? MyColor.colorWhite
                     : MyColor.colorBlack),

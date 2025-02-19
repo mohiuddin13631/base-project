@@ -15,9 +15,9 @@ class OTPFieldWidget extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: Dimensions.space30),
       child: PinCodeTextField(
         appContext: context,
-        pastedTextStyle: interRegularDefault.copyWith(color: MyColor.getTextColor()),
+        pastedTextStyle: regularDefault.copyWith(color: MyColor.getTextColor()),
         length: 6,
-        textStyle: interRegularDefault.copyWith(color: MyColor.getTextColor()),
+        textStyle: regularDefault.copyWith(color: MyColor.getTextColor()),
         obscureText: false,
         obscuringCharacter: '*',
         blinkWhenObscuring: false,

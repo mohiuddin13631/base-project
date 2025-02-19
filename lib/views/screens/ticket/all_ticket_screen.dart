@@ -113,11 +113,11 @@ class _AllTicketScreenState extends State<AllTicketScreen> {
                                                     header: "[${MyStrings.ticket.tr}#${controller.ticketList[index].ticket}] ${controller.ticketList[index].subject}",
                                                     body: "${controller.ticketList[index].subject}",
                                                     space: 5,
-                                                    headerTextDecoration: interRegularDefault.copyWith(
+                                                    headerTextDecoration: regularDefault.copyWith(
                                                       color: Theme.of(context).textTheme.titleLarge?.color,
                                                       fontWeight: FontWeight.w700,
                                                     ),
-                                                    bodyTextDecoration: interRegularDefault.copyWith(
+                                                    bodyTextDecoration: regularDefault.copyWith(
                                                       color: MyColor.ticketDetails,
                                                     ),
                                                   ),
@@ -134,7 +134,7 @@ class _AllTicketScreenState extends State<AllTicketScreen> {
                                             ),
                                             child: Text(
                                               controller.getStatusText(controller.ticketList[index].status ?? '0'),
-                                              style: interRegularDefault.copyWith(
+                                              style: regularDefault.copyWith(
                                                 color: controller.getStatusColor(controller.ticketList[index].status ?? "0"),
                                               ),
                                             ),
@@ -154,14 +154,14 @@ class _AllTicketScreenState extends State<AllTicketScreen> {
                                             ),
                                             child: Text(
                                               controller.getStatus(controller.ticketList[index].priority ?? '1', isPriority: true),
-                                              style: interRegularDefault.copyWith(
+                                              style: regularDefault.copyWith(
                                                 color: controller.getStatusColor(controller.ticketList[index].priority ?? "0", isPriority: true),
                                               ),
                                             ),
                                           ),
                                           Text(
                                             DateConverter.getFormatedSubtractTime(controller.ticketList[index].createdAt ?? ''),
-                                            style: interRegularDefault.copyWith(fontSize: 10, color: MyColor.ticketDateColor),
+                                            style: regularDefault.copyWith(fontSize: 10, color: MyColor.ticketDateColor),
                                           ),
                                         ],
                                       )

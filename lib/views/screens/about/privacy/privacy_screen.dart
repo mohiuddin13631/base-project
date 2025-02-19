@@ -97,7 +97,7 @@ class _PrivacyScreenState extends State<PrivacyScreen> {
                             width: double.infinity,
                             child: HtmlWidget(
                                 controller.selectedHtml,
-                                textStyle: interRegularDefault.copyWith(color: MyColor.textColor),
+                                textStyle: regularDefault.copyWith(color: MyColor.textColor),
                                 onLoadingBuilder: (context, element, loadingProgress) => const CustomLoader(isFullScreen: true,)
                             )
                         )

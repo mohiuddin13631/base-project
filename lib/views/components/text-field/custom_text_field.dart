@@ -95,7 +95,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
         TextFormField(
           maxLines: widget.maxLines ?? 1,
           readOnly: widget.readOnly,
-          style: interRegularDefault.copyWith(color: MyColor.colorBlack),
+          style: regularDefault.copyWith(color: MyColor.colorBlack),
           cursorColor: MyColor.primaryColor,
           controller: widget.controller,
           autofocus: false,
@@ -112,12 +112,12 @@ class _CustomTextFieldState extends State<CustomTextField> {
               margin: const EdgeInsets.symmetric(horizontal: 8),
               padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
               decoration: BoxDecoration(color: MyColor.primaryColor.withOpacity(.1),borderRadius: BorderRadius.circular(Dimensions.defaultRadius)),
-              child: Text(widget.prefixText,style: interRegularDefault.copyWith(color:MyColor.primaryColor),),
+              child: Text(widget.prefixText,style: regularDefault.copyWith(color:MyColor.primaryColor),),
             ),
             prefixIconConstraints: const BoxConstraints(minWidth: 0, minHeight: 0),
             contentPadding: const EdgeInsets.only(top: 5, left: 15, right: 15, bottom: 5),
             hintText: widget.hintText!=null?widget.hintText!.tr:'',
-            hintStyle: interRegularSmall.copyWith(color: MyColor.getGreyText()),
+            hintStyle: regularSmall.copyWith(color: MyColor.getGreyText()),
             fillColor: MyColor.transparentColor,
             filled: true,
             border: OutlineInputBorder(borderSide: BorderSide(color: widget.disableColor,width: .5), borderRadius: BorderRadius.circular(Dimensions.defaultRadius)),
@@ -139,12 +139,12 @@ class _CustomTextFieldState extends State<CustomTextField> {
             )
                 : widget.suffixText != null ? Padding(
                   padding: const EdgeInsets.only(top: 14),
-                  child: Text(widget.suffixText ?? "",style: interMediumDefault,textAlign: TextAlign.center,),
+                  child: Text(widget.suffixText ?? "",style: mediumDefault,textAlign: TextAlign.center,),
                 ) : Container(
               margin: const EdgeInsets.symmetric(horizontal: 8),
               padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
               decoration: BoxDecoration(color: MyColor.getPrimaryColor(),borderRadius: BorderRadius.circular(Dimensions.defaultRadius)),
-              child: Text(widget.prefixText,style: interRegularDefault.copyWith(color:MyColor.colorWhite),))
+              child: Text(widget.prefixText,style: regularDefault.copyWith(color:MyColor.colorWhite),))
                 : null,
           ),
           onFieldSubmitted: (text) => widget.nextFocus != null ? FocusScope.of(context).requestFocus(widget.nextFocus) : null,
@@ -163,7 +163,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
         TextFormField(
           maxLines: widget.maxLines ?? 1,
           readOnly: widget.readOnly,
-          style: interRegularDefault.copyWith(color: MyColor.colorBlack),
+          style: regularDefault.copyWith(color: MyColor.colorBlack),
           cursorColor: MyColor.primaryColor,
           controller: widget.controller,
           autofocus: false,
@@ -180,12 +180,12 @@ class _CustomTextFieldState extends State<CustomTextField> {
               decoration: BoxDecoration(color:MyColor.transparentColor,border:Border(bottom: BorderSide(color: MyColor.transparentColor))),
               child: Align(
                 alignment: Alignment.center,
-                  child: Text(widget.prefixText,style: interRegularDefault.copyWith(color:MyColor.primaryColor),)),
+                  child: Text(widget.prefixText,style: regularDefault.copyWith(color:MyColor.primaryColor),)),
             ),
             contentPadding: const EdgeInsets.only(top: 5, left: 0, right: 0, bottom: 5),
             labelText:  widget.labelText?.tr,
-            labelStyle: interRegularDefault.copyWith(color: MyColor.labelTextColor),
-            hintStyle: interRegularSmall.copyWith(color: MyColor.getGreyText()),
+            labelStyle: regularDefault.copyWith(color: MyColor.labelTextColor),
+            hintStyle: regularSmall.copyWith(color: MyColor.getGreyText()),
             fillColor: MyColor.transparentColor,
             filled: true,
             border: const UnderlineInputBorder(borderSide: BorderSide(color: MyColor.borderColor)),
@@ -193,7 +193,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
             focusedBorder: const UnderlineInputBorder(borderSide: BorderSide(color: MyColor.primaryColor)),
             enabledBorder: const UnderlineInputBorder(borderSide: BorderSide(color: MyColor.borderColor)),
             errorBorder: const UnderlineInputBorder(borderSide: BorderSide(color: MyColor.redCancelTextColor)),
-            errorStyle: interRegularSmall.copyWith(color: MyColor.colorRed),
+            errorStyle: regularSmall.copyWith(color: MyColor.colorRed),
             suffixIcon: widget.isShowSuffixIcon
                 ? widget.isPassword
                 ? IconButton(

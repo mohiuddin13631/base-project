@@ -48,8 +48,8 @@ class _PreviewWidgetState extends State<PreviewWidget> {
             ), child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(widget.header.toString().tr,style: interSemiBold.copyWith(fontSize: Dimensions.fontLarge,color: MyColor.colorWhite)),
-                  widget.header2!=null?Text(widget.header2.toString().tr,style: interRegularDefault.copyWith(color: MyColor.colorRed),):const SizedBox(),
+                  Text(widget.header.toString().tr,style: semiBold.copyWith(fontSize: Dimensions.fontLarge,color: MyColor.colorWhite)),
+                  widget.header2!=null?Text(widget.header2.toString().tr,style: regularDefault.copyWith(color: MyColor.colorRed),):const SizedBox(),
                 ],
               )): const SizedBox.shrink(),
 

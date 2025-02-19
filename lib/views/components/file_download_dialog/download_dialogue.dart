@@ -92,7 +92,7 @@ class DownloadingDialogState extends State<DownloadingDialog> {
           ),
           Text(
             MyStrings.downloading.tr,
-            style: interRegularDefault
+            style: regularDefault
           ),
         ],
       ),

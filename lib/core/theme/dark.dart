@@ -17,7 +17,7 @@ ThemeData dark = ThemeData(
   appBarTheme: AppBarTheme(
     backgroundColor: MyColor.getAppbarBgColor(),
     elevation: 0,
-    titleTextStyle: interRegularLarge.copyWith(color: MyColor.colorWhite),
+    titleTextStyle: regularLarge.copyWith(color: MyColor.colorWhite),
     iconTheme: const IconThemeData(
       size: 20,
       color: MyColor.colorWhite

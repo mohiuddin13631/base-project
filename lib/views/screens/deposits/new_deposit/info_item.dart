@@ -41,8 +41,8 @@ class InfoItem extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(firstText.tr, style: interRegularSmall.copyWith(color: MyColor.smallTextColor1)),
-                  Text(lastText.tr, style: interRegularSmall.copyWith(color: MyColor.titleColor)),
+                  Text(firstText.tr, style: regularSmall.copyWith(color: MyColor.smallTextColor1)),
+                  Text(lastText.tr, style: regularSmall.copyWith(color: MyColor.titleColor)),
                 ],
               )
             ],

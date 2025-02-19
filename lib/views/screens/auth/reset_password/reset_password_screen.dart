@@ -67,7 +67,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                         HeaderText(text: MyStrings.resetYourPassword.tr),
                         const SizedBox(height: Dimensions.space15),
                         Padding(padding: EdgeInsetsDirectional.only(end: MediaQuery.of(context).size.width*.2),
-                        child: DefaultText(maxLines:3,text: MyStrings.resetPassContent.tr, textStyle: interRegularDefault.copyWith(color: MyColor.getGreyText())),),
+                        child: DefaultText(maxLines:3,text: MyStrings.resetPassContent.tr, textStyle: regularDefault.copyWith(color: MyColor.getGreyText())),),
                         const SizedBox(height: Dimensions.space20),
                         Visibility(
                             visible: controller.hasPasswordFocus && controller.checkPasswordStrength,

@@ -104,7 +104,7 @@ class _NewTicketScreenState extends State<NewTicketScreen> {
                                 value: value,
                                 child: Text(
                                   value,
-                                  style: interRegularDefault.copyWith(fontSize: Dimensions.fontDefault),
+                                  style: regularDefault.copyWith(fontSize: Dimensions.fontDefault),
                                 ),
                               );
                             }).toList(),
@@ -155,13 +155,13 @@ class _NewTicketScreenState extends State<NewTicketScreen> {
                             ),
                             child: Text(
                               MyStrings.upload,
-                              style: interRegularDefault.copyWith(color: MyColor.colorWhite),
+                              style: regularDefault.copyWith(color: MyColor.colorWhite),
                             ),
                           ),
                         ),
                       ),
                       const SizedBox(height: 2),
-                      Text(MyStrings.supportedFileHint, style: interRegularSmall.copyWith(color: MyColor.getGreyText())),
+                      Text(MyStrings.supportedFileHint, style: regularSmall.copyWith(color: MyColor.getGreyText())),
                       const SizedBox(height: Dimensions.space10),
                       controller.attachmentList.isNotEmpty
                           ? SingleChildScrollView(

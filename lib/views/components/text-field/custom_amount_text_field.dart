@@ -71,7 +71,7 @@ class _CustomAmountTextFieldState extends State<CustomAmountTextField> {
                       cursorColor: MyColor.primaryColor,
                       controller: widget.controller,
                       autofocus: widget.autoFocus,
-                      style: interRegularDefault.copyWith(color: MyColor.colorBlack),
+                      style: regularDefault.copyWith(color: MyColor.colorBlack),
                       //textAlign: TextAlign.left,
                       keyboardType: TextInputType.number,
                       textInputAction: widget.inputAction,
@@ -79,7 +79,7 @@ class _CustomAmountTextFieldState extends State<CustomAmountTextField> {
                       decoration: InputDecoration(
                           contentPadding: const EdgeInsets.only(bottom: 16),
                           hintText: widget.hintText.tr,
-                          hintStyle: interRegularSmall.copyWith(color: MyColor.getGreyText()),
+                          hintStyle: regularSmall.copyWith(color: MyColor.getGreyText()),
                           border: InputBorder.none,
                           focusedBorder: InputBorder.none,
                           enabledBorder: InputBorder.none,
@@ -96,7 +96,7 @@ class _CustomAmountTextFieldState extends State<CustomAmountTextField> {
                 padding: const EdgeInsets.all(Dimensions.space5),
                 decoration: BoxDecoration(color: MyColor.transparentColor, borderRadius: BorderRadius.circular(5)),
                 alignment: Alignment.center,
-                child: Text(widget.currency.tr, textAlign: TextAlign.center, style: interRegularDefault.copyWith(color: MyColor.fieldDisableBorderColor, fontWeight: FontWeight.w500)),
+                child: Text(widget.currency.tr, textAlign: TextAlign.center, style: regularDefault.copyWith(color: MyColor.fieldDisableBorderColor, fontWeight: FontWeight.w500)),
               )
             ],
           ),

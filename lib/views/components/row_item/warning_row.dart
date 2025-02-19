@@ -38,7 +38,7 @@ class WarningRow extends StatelessWidget {
           children: [
             Icon(Icons.info_outline,color: iconColor,size: iconSize),
             SizedBox(width: iconSpace),
-            Text(text.tr,style: interRegularDefault.copyWith(color: textColor,fontSize: textSize),),
+            Text(text.tr,style: regularDefault.copyWith(color: textColor,fontSize: textSize),),
           ],
         ),
       ],

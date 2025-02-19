@@ -38,13 +38,13 @@ class _DeleteAccountBottomsheetBodyState extends State<DeleteAccountBottomsheetB
                 const SizedBox(height: Dimensions.space25),
                 Text(
                   MyStrings.deleteYourAccount.tr,
-                  style: interMediumDefault.copyWith(color: MyColor.colorBlack, fontSize: Dimensions.fontLarge),
+                  style: mediumDefault.copyWith(color: MyColor.colorBlack, fontSize: Dimensions.fontLarge),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: Dimensions.space25),
                 Text(
                   MyStrings.deleteBottomSheetSubtitle.tr,
-                  style: interRegularDefault.copyWith(color: MyColor.colorGrey.withOpacity(0.8), fontSize: Dimensions.fontLarge),
+                  style: regularDefault.copyWith(color: MyColor.colorGrey.withOpacity(0.8), fontSize: Dimensions.fontLarge),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: Dimensions.space40),
@@ -68,7 +68,7 @@ class _DeleteAccountBottomsheetBodyState extends State<DeleteAccountBottomsheetB
                             )
                           : Text(
                               MyStrings.deleteAccount.tr,
-                              style: interMediumDefault.copyWith(color: MyColor.delteBtnTextColor, fontSize: Dimensions.fontLarge),
+                              style: mediumDefault.copyWith(color: MyColor.delteBtnTextColor, fontSize: Dimensions.fontLarge),
                             ),
                     ),
                   ),
@@ -88,7 +88,7 @@ class _DeleteAccountBottomsheetBodyState extends State<DeleteAccountBottomsheetB
                     child: Center(
                       child: Text(
                         MyStrings.cancel.tr,
-                        style: interMediumDefault.copyWith(color: MyColor.colorBlack, fontSize: Dimensions.fontLarge),
+                        style: mediumDefault.copyWith(color: MyColor.colorBlack, fontSize: Dimensions.fontLarge),
                       ),
                     ),
                   ),

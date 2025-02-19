@@ -48,7 +48,7 @@ class CardColumn extends StatelessWidget {
       children: [
         Text(
           header.tr,
-          style: headerTextDecoration ?? interRegularSmall.copyWith(color: Theme.of(context).textTheme.titleLarge!.color, fontWeight: FontWeight.w600),
+          style: headerTextDecoration ?? regularSmall.copyWith(color: Theme.of(context).textTheme.titleLarge!.color, fontWeight: FontWeight.w600),
           overflow: TextOverflow.ellipsis,
         ),
         SizedBox(
@@ -63,16 +63,16 @@ class CardColumn extends StatelessWidget {
           ? CrossAxisAlignment.end
           : CrossAxisAlignment.start,
       children: [
-        Text(header.tr,style: interRegularSmall.copyWith(color: MyColor.getGreyText(),fontWeight: FontWeight.w600),overflow: TextOverflow.ellipsis,),
+        Text(header.tr,style: regularSmall.copyWith(color: MyColor.getGreyText(),fontWeight: FontWeight.w600),overflow: TextOverflow.ellipsis,),
         SizedBox(
           height: space,
         ),
-        Text(body.tr,style: isDate?interRegularDefault.copyWith(fontStyle: FontStyle.italic,color:textColor??MyColor.smallTextColor1,fontSize: Dimensions.fontSmall):interRegularDefault.copyWith(color:textColor??MyColor.smallTextColor1 )),
+        Text(body.tr,style: isDate?regularDefault.copyWith(fontStyle: FontStyle.italic,color:textColor??MyColor.smallTextColor1,fontSize: Dimensions.fontSmall):regularDefault.copyWith(color:textColor??MyColor.smallTextColor1 )),
         SizedBox(
           height: space,
         ),
         subBody != null
-            ? Text(subBody!.tr, maxLines: bodyMaxLine, style: isDate ? interRegularDefault.copyWith(fontStyle: FontStyle.italic, color: textColor ?? MyColor.getGreyText(), fontSize: Dimensions.fontSmall) : subBodyTextDecoration ?? interRegularSmall.copyWith(color: textColor ?? MyColor.smallTextColor1.withOpacity(0.5), fontWeight: FontWeight.w500), overflow: TextOverflow.ellipsis)
+            ? Text(subBody!.tr, maxLines: bodyMaxLine, style: isDate ? regularDefault.copyWith(fontStyle: FontStyle.italic, color: textColor ?? MyColor.getGreyText(), fontSize: Dimensions.fontSmall) : subBodyTextDecoration ?? regularSmall.copyWith(color: textColor ?? MyColor.smallTextColor1.withOpacity(0.5), fontWeight: FontWeight.w500), overflow: TextOverflow.ellipsis)
             : const SizedBox.shrink()
       ],
     );

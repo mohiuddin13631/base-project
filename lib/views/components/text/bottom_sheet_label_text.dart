@@ -12,7 +12,7 @@ class BottomSheetLabelText extends StatelessWidget {
     return Text(
       text.tr,
       textAlign: textAlign,
-      style:  interRegularLarge.copyWith(fontWeight: FontWeight.w600),
+      style:  regularLarge.copyWith(fontWeight: FontWeight.w600),
     );
   }
 }

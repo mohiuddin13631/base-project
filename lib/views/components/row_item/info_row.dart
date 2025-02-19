@@ -15,7 +15,7 @@ class InfoRow extends StatelessWidget {
       children: [
         Icon(Icons.info_outline,size: iconSize,color: MyColor.getGreyText(),),
         const SizedBox(width: 5,),
-        Text(text.tr, style:interSemiBold.copyWith(fontSize:Dimensions.fontDefault,color: MyColor.getGreyText(),)
+        Text(text.tr, style:semiBold.copyWith(fontSize:Dimensions.fontDefault,color: MyColor.getGreyText(),)
         ),
       ],
     );

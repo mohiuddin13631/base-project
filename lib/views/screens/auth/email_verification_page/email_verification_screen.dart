@@ -78,7 +78,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                       const SizedBox(height: Dimensions.space50),
                       Padding(
                         padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*.1),
-                        child: Text(MyStrings.otpSubText.tr, maxLines: 2, textAlign: TextAlign.center,style: interRegularDefault.copyWith(color: MyColor.labelTextColor)),
+                        child: Text(MyStrings.otpSubText.tr, maxLines: 2, textAlign: TextAlign.center,style: regularDefault.copyWith(color: MyColor.labelTextColor)),
                       ),
                       const SizedBox(height: 30),
                       OTPFieldWidget(
@@ -99,7 +99,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(MyStrings.didNotReceiveCode.tr, style: interRegularDefault.copyWith(color: MyColor.labelTextColor)),
+                          Text(MyStrings.didNotReceiveCode.tr, style: regularDefault.copyWith(color: MyColor.labelTextColor)),
                           const SizedBox(width: Dimensions.space10),
                           controller.resendLoading?
                           Container(margin:const EdgeInsets.only(left: 5,top: 5),height:20,width:20,child: const CircularProgressIndicator(color: MyColor.primaryColor)):
@@ -107,7 +107,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                             onTap: (){
                               controller.sendCodeAgain();
                             },
-                            child: Text(MyStrings.resend.tr, style: interRegularDefault.copyWith(color: MyColor.primaryColor,decoration: TextDecoration.underline)),
+                            child: Text(MyStrings.resend.tr, style: regularDefault.copyWith(color: MyColor.primaryColor,decoration: TextDecoration.underline)),
                           )
                         ],
                       )

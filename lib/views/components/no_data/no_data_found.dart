@@ -36,7 +36,7 @@ class NoDataWidget extends StatelessWidget {
           Text(
             title,
             textAlign: TextAlign.center,
-            style: interRegularDefault.copyWith(color: MyColor.getTextColor().withOpacity(.6), fontSize: Dimensions.fontDefault),
+            style: regularDefault.copyWith(color: MyColor.getTextColor().withOpacity(.6), fontSize: Dimensions.fontDefault),
           )
         ],
       ),

@@ -96,7 +96,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                         Text(
                           MyStrings.referralLink.tr,
                           textAlign: TextAlign.left,
-                          style: interRegularDefault.copyWith(color: MyColor.getTextColor()),
+                          style: regularDefault.copyWith(color: MyColor.getTextColor()),
                         ),
                       ],
                     ),
@@ -116,7 +116,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                   child: Text(
                                     "${UrlContainer.domainUrl}?reference=${controller.referralRepo.apiClient.getCurrencyOrUsername(isCurrency: false)}",
                                     textAlign: TextAlign.start,
-                                    style: interRegularSmall.copyWith(color: MyColor.getTextColor()),
+                                    style: regularSmall.copyWith(color: MyColor.getTextColor()),
                                   ),
                                 ),
                               ),
@@ -176,7 +176,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                 child: Text(
                                   Converter.addLeadingZero("${index+1}"),
                                   textAlign: TextAlign.center,
-                                  style: interRegularLarge.copyWith(color: MyColor.getGreyText1(), fontWeight: FontWeight.w500),
+                                  style: regularLarge.copyWith(color: MyColor.getGreyText1(), fontWeight: FontWeight.w500),
                                 ),
                               ),
                               const SizedBox(width: Dimensions.space10),
@@ -214,10 +214,10 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text(MyStrings.username.tr,
-                                          style: interRegularDefault.copyWith(color: MyColor.getPrimaryColor(), fontWeight: FontWeight.w600),
+                                          style: regularDefault.copyWith(color: MyColor.getPrimaryColor(), fontWeight: FontWeight.w600),
                                         ),
                                         Text(MyStrings.level.tr,
-                                          style: interRegularDefault.copyWith(color: MyColor.getPrimaryColor(), fontWeight: FontWeight.w600),
+                                          style: regularDefault.copyWith(color: MyColor.getPrimaryColor(), fontWeight: FontWeight.w600),
                                         ),
                                       ],
                                     ),
@@ -226,11 +226,11 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                       children: [
                                         Text(
                                           controller.dataList[index].username,
-                                          style: interRegularDefault.copyWith(color: MyColor.getTextColor(), fontWeight: FontWeight.w600),
+                                          style: regularDefault.copyWith(color: MyColor.getTextColor(), fontWeight: FontWeight.w600),
                                         ),
                                         Text(
                                           Converter.getTrailingExtension(int.tryParse(controller.dataList[index].level)??0),
-                                          style: interRegularDefault.copyWith(color: MyColor.getTextColor(), fontWeight: FontWeight.w600),
+                                          style: regularDefault.copyWith(color: MyColor.getTextColor(), fontWeight: FontWeight.w600),
                                         ),
                                       ],
                                     ),
